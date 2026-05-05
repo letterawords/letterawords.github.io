@@ -22,30 +22,40 @@ const Footer = {
           <div class="footer-col">
             <h4>Explore</h4>
             <ul>
-              <li><a href="#finder">Word Finder</a></li>
-              <li><a href="#browse">Browse by Length</a></li>
-              <li><a href="#kids">Kids Words</a></li>
-              <li><a href="#positive">Positive A Words</a></li>
-              <li><a href="#scrabble">Scrabble Helper</a></li>
+              <li><a href="/#finder">Word Finder</a></li>
+              <li><a href="/browse">Browse by Length</a></li>
+              <li><a href="/kids">Kids Words</a></li>
+              <li><a href="/#positive">Positive A Words</a></li>
+              <li><a href="/#scrabble">Scrabble Helper</a></li>
             </ul>
           </div>
           <div class="footer-col">
             <h4>Word Types</h4>
             <ul>
-              <li><a href="#action">Action Words</a></li>
-              <li><a href="#adjectives">Adjectives</a></li>
-              <li><a href="#nouns">Nouns</a></li>
-              <li><a href="#adverbs">Adverbs</a></li>
-              <li><a href="#learn">Word of the Day</a></li>
+              <li><a href="/#action">Action Words</a></li>
+              <li><a href="/#adjectives">Adjectives</a></li>
+              <li><a href="/#nouns">Nouns</a></li>
+              <li><a href="/#adverbs">Adverbs</a></li>
+              <li><a href="/#learn">Word of the Day</a></li>
             </ul>
           </div>
           <div class="footer-col">
             <h4>Learn</h4>
             <ul>
-              <li><a href="#learn">About the Letter A</a></li>
-              <li><a href="#tips">Learning Tips</a></li>
-              <li><a href="#faq">FAQ</a></li>
-              <li><a href="#quiz">Word Quiz</a></li>
+              <li><a href="/#learn">About the Letter A</a></li>
+              <li><a href="/#tips">Learning Tips</a></li>
+              <li><a href="/#faq">FAQ</a></li>
+              <li><a href="/#quiz">Word Quiz</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Pages</h4>
+            <ul>
+              <li><a href="/about">About</a></li>
+              <li><a href="/contact">Contact</a></li>
+              <li><a href="/privacy">Privacy Policy</a></li>
+              <li><a href="/terms">Terms of Use</a></li>
+              <li><a href="/disclaimer">Disclaimer</a></li>
             </ul>
           </div>
         </div>
