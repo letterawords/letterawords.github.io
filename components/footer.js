@@ -23,8 +23,8 @@ const Footer = {
             <h4>Explore</h4>
             <ul>
               <li><a href="/#finder">Word Finder</a></li>
-              <li><a href="/browse">Browse by Length</a></li>
-              <li><a href="/kids">Kids Words</a></li>
+              <li><a href="/#browse">Browse by Length</a></li>
+              <li><a href="/#kids">Kids Words</a></li>
               <li><a href="/#positive">Positive A Words</a></li>
               <li><a href="/#scrabble">Scrabble Helper</a></li>
             </ul>
