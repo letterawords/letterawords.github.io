@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us — Letter A Words</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+  <style>
+    .about-hero { padding: 140px 0 60px; background: var(--bg2); text-align: center; }
+    .about-content { padding: 80px 0; }
+    .profile-card { 
+      display: flex; 
+      gap: 40px; 
+      align-items: center; 
+      background: var(--surface); 
+      padding: 40px; 
+      border-radius: var(--radius-xl); 
+      border: 2px solid var(--border);
+      box-shadow: var(--shadow);
+    }
+    .profile-text h2 { color: var(--primary); margin-bottom: 15px; }
+    .profile-text p { color: var(--text2); margin-bottom: 20px; line-height: 1.8; }
+    @media (max-width: 768px) {
+      .profile-card { flex-direction: column; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+  <header id="site-header" role="banner"></header>
+
+  <section class="about-hero">
+    <div class="container">
+      <div class="section-tag">Our Story</div>
+      <h1 class="hero-title">Passion for <span class="highlight">Words</span></h1>
+      <p class="hero-subtitle">Helping learners discover the beauty and utility of the English alphabet, one letter at a time[cite: 2].</p>
+    </div>
+  </section>
+
+  <main class="about-content container">
+    <div class="profile-card animate-on-scroll">
+      <div class="profile-text">
+        <h2>Meet the Creator</h2>
+        <p>Hi, I'm <strong>Michael</strong>. As a web developer and SEO expert, I created <strong>Letter A Words</strong> to combine my technical skills with a love for educational accessibility[cite: 2].</p>
+        <p>This platform was built to provide a comprehensive, 100% free resource for students, writers, and word game enthusiasts[cite: 2]. Whether you are looking for positive A words for daily affirmations or high-scoring Scrabble terms, my goal is to make your search effortless and engaging[cite: 2].</p>
+        <div class="hero-stats" style="justify-content: flex-start; margin-top: 20px;">
+          <div class="stat-item">
+            <span class="stat-num">SEO</span>
+            <span class="stat-label">Optimized</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">Dev</span>
+            <span class="stat-label">Focused</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer id="site-footer" role="contentinfo"></footer>
+  <script src="components/header.js"></script>
+  <script src="components/footer.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
