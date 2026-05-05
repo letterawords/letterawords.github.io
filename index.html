@@ -191,6 +191,26 @@
     </section>
 
     <!-- ═══════════════════════════════════════════════
+         SECTION 3: BROWSE BY LENGTH
+    ══════════════════════════════════════════════════ -->
+    <section id="browse" aria-labelledby="browseHeading">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <div class="section-tag">📏 Browse by Length</div>
+          <h2 class="section-title" id="browseHeading">Words by <span class="highlight">Letter Count</span></h2>
+          <p class="section-desc">Click any length card below to browse all words starting with A that have exactly that many letters — great for word games and puzzles!</p>
+        </div>
+
+        <div class="browse-grid" id="browseGrid" role="list" aria-label="Word lengths"></div>
+
+        <div class="browse-results" id="browseResults">
+          <h3 id="browseResultsHeading" style="font-size:1.3rem;font-weight:800;margin-bottom:20px;color:var(--text)"></h3>
+          <div class="words-grid"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════
          SECTION 2: WORD FINDER
     ══════════════════════════════════════════════════ -->
     <section id="finder" aria-labelledby="finderHeading">
@@ -236,27 +256,7 @@
         <div class="words-grid" id="wordsGrid" role="list" aria-label="Word results"></div>
         <div class="pagination" id="pagination" role="navigation" aria-label="Word list pages"></div>
       </div>
-    </section>
-
-    <!-- ═══════════════════════════════════════════════
-         SECTION 3: BROWSE BY LENGTH
-    ══════════════════════════════════════════════════ -->
-    <section id="browse" aria-labelledby="browseHeading">
-      <div class="container">
-        <div class="section-header animate-on-scroll">
-          <div class="section-tag">📏 Browse by Length</div>
-          <h2 class="section-title" id="browseHeading">Words by <span class="highlight">Letter Count</span></h2>
-          <p class="section-desc">Click any length card below to browse all words starting with A that have exactly that many letters — great for word games and puzzles!</p>
-        </div>
-
-        <div class="browse-grid" id="browseGrid" role="list" aria-label="Word lengths"></div>
-
-        <div class="browse-results" id="browseResults">
-          <h3 id="browseResultsHeading" style="font-size:1.3rem;font-weight:800;margin-bottom:20px;color:var(--text)"></h3>
-          <div class="words-grid"></div>
-        </div>
-      </div>
-    </section>
+    </section>    
 
     <!-- ═══════════════════════════════════════════════
          SECTION 4: WORD OF THE DAY
