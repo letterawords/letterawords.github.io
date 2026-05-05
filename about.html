@@ -7,8 +7,15 @@
   <link rel="stylesheet" href="css/style.css" />
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
   <style>
-    .about-hero { padding: 140px 0 60px; background: var(--bg2); text-align: center; }
-    .about-content { padding: 80px 0; }
+    /* Prevent content from being hidden behind headers */
+    .about-hero { 
+      padding: 120px 0 60px; 
+      background: var(--bg2); 
+      text-align: center; 
+    }
+    
+    .about-content { padding: 60px 0; }
+    
     .profile-card { 
       display: flex; 
       gap: 40px; 
@@ -18,11 +25,18 @@
       border-radius: var(--radius-xl); 
       border: 2px solid var(--border);
       box-shadow: var(--shadow);
+      opacity: 1 !important; /* Forces visibility */
     }
+    
     .profile-text h2 { color: var(--primary); margin-bottom: 15px; }
-    .profile-text p { color: var(--text2); margin-bottom: 20px; line-height: 1.8; }
+    .profile-text p { color: var(--text2); margin-bottom: 20px; line-height: 1.8; text-align: left; }
+    
+    .stat-item { text-align: center; }
+
     @media (max-width: 768px) {
-      .profile-card { flex-direction: column; text-align: center; }
+      .profile-card { flex-direction: column; text-align: center; padding: 30px 20px; }
+      .profile-text p { text-align: center; }
+      .about-hero { padding-top: 100px; }
     }
   </style>
 </head>
@@ -33,24 +47,26 @@
     <div class="container">
       <div class="section-tag">Our Story</div>
       <h1 class="hero-title">Passion for <span class="highlight">Words</span></h1>
-      <p class="hero-subtitle">Helping learners discover the beauty and utility of the English alphabet, one letter at a time[cite: 2].</p>
+      <p class="hero-subtitle">Helping learners discover the beauty and utility of the English alphabet, one letter at a time.</p>
     </div>
   </section>
 
   <main class="about-content container">
-    <div class="profile-card animate-on-scroll">
+    <!-- Removed animate-on-scroll to prevent blank page issues -->
+    <div class="profile-card">
       <div class="profile-text">
         <h2>Meet the Creator</h2>
-        <p>Hi, I'm <strong>Michael</strong>. As a web developer and SEO expert, I created <strong>Letter A Words</strong> to combine my technical skills with a love for educational accessibility[cite: 2].</p>
-        <p>This platform was built to provide a comprehensive, 100% free resource for students, writers, and word game enthusiasts[cite: 2]. Whether you are looking for positive A words for daily affirmations or high-scoring Scrabble terms, my goal is to make your search effortless and engaging[cite: 2].</p>
-        <div class="hero-stats" style="justify-content: flex-start; margin-top: 20px;">
+        <p>Hi, I'm <strong>Mustafa Bukhari</strong>. As a web developer and SEO expert, I created <strong>Letter A Words</strong> to combine my technical skills with a love for educational accessibility.</p>
+        <p>This platform was built to provide a comprehensive, 100% free resource for students, writers, and word game enthusiasts. Whether you are looking for positive A words for daily affirmations or high-scoring Scrabble terms, my goal is to make your search effortless and engaging.</p>
+        
+        <div class="hero-stats" style="justify-content: flex-start; margin-top: 20px; display: flex; gap: 30px;">
           <div class="stat-item">
-            <span class="stat-num">SEO</span>
-            <span class="stat-label">Optimized</span>
+            <span class="stat-num" style="display:block; font-weight:900; color:var(--primary);">SEO</span>
+            <span class="stat-label">Expert</span>
           </div>
           <div class="stat-item">
-            <span class="stat-num">Dev</span>
-            <span class="stat-label">Focused</span>
+            <span class="stat-num" style="display:block; font-weight:900; color:var(--primary);">DEV</span>
+            <span class="stat-label">Pro</span>
           </div>
         </div>
       </div>
@@ -58,6 +74,7 @@
   </main>
 
   <footer id="site-footer" role="contentinfo"></footer>
+  
   <script src="components/header.js"></script>
   <script src="components/footer.js"></script>
   <script src="js/app.js"></script>
