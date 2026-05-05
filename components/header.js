@@ -15,11 +15,11 @@ const Header = {
         </a>
         <nav class="main-nav" role="navigation" aria-label="Main navigation">
           <ul>
-            <li><a href="#finder">Word Finder</a></li>
-            <li><a href="#browse">Browse</a></li>
-            <li><a href="#kids">For Kids</a></li>
-            <li><a href="#scrabble">Scrabble</a></li>
-            <li><a href="#learn">Learn</a></li>
+            <li><a href="/#finder">Word Finder</a></li>
+            <li><a href="/#browse">Browse</a></li>
+            <li><a href="/#kids">For Kids</a></li>
+            <li><a href="/#scrabble">Scrabble</a></li>
+            <li><a href="/#learn">Learn</a></li>
           </ul>
         </nav>
         <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
