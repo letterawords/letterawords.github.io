@@ -7,9 +7,23 @@
   <link rel="stylesheet" href="css/style.css" />
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
   <style>
-    .contact-container { padding: 140px 0 80px; display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+    /* Ensure the main container is visible and not hidden behind fixed headers */
+    main.container { 
+      min-height: 80vh; 
+      display: block !important; 
+    }
+    
+    .contact-container { 
+      padding: 100px 0 80px; 
+      display: grid; 
+      grid-template-columns: 1fr 1fr; 
+      gap: 40px; 
+      opacity: 1 !important; /* Ensure visibility */
+    }
+
     .contact-info h1 { font-size: 3rem; margin-bottom: 20px; color: var(--text); }
     .contact-info p { color: var(--text2); margin-bottom: 30px; }
+    
     .info-box { 
       background: var(--bg3); 
       padding: 24px; 
@@ -17,8 +31,9 @@
       border: 2px solid var(--border2);
       margin-bottom: 20px;
     }
+    
     .info-box h3 { font-size: 1.1rem; color: var(--primary); margin-bottom: 5px; }
-    .info-box a { font-weight: 700; color: var(--text); }
+    .info-box a { font-weight: 700; color: var(--text); text-decoration: none; }
     
     .contact-form { 
       background: var(--surface); 
@@ -27,7 +42,8 @@
       border: 2px solid var(--border);
       box-shadow: var(--shadow-lg);
     }
-    .form-group { margin-bottom: 20px; }
+    
+    .form-group { margin-bottom: 20px; text-align: left; }
     .form-group label { display: block; margin-bottom: 8px; font-weight: 700; color: var(--text2); }
     .form-group input, .form-group textarea { 
       width: 100%; 
@@ -35,12 +51,13 @@
       border: 2px solid var(--border); 
       border-radius: var(--radius-sm);
       outline: none;
-      font-family: var(--font-body);
+      font-family: inherit;
+      box-sizing: border-box; /* Prevents input overflow */
     }
-    .form-group input:focus { border-color: var(--secondary); }
-    
+
     @media (max-width: 900px) {
-      .contact-container { grid-template-columns: 1fr; }
+      .contact-container { grid-template-columns: 1fr; padding-top: 60px; }
+      .contact-info h1 { font-size: 2.2rem; }
     }
   </style>
 </head>
@@ -49,14 +66,14 @@
 
   <main class="container">
     <div class="contact-container">
-      <div class="contact-info animate-on-scroll">
+      <div class="contact-info">
         <div class="section-tag">Get in Touch</div>
         <h1>Let's Chat!</h1>
-        <p>Have a suggestion for a new "A" word or want to collaborate? I'd love to hear from you. As a developer and SEO expert, I'm always looking for ways to improve this tool[cite: 2].</p>
+        <p>Have a suggestion for a new "A" word or want to collaborate? I'd love to hear from you. As a web developer and SEO expert, I'm always looking for ways to improve this tool.</p>
         
         <div class="info-box">
-          <h3>Email Michael</h3>
-          <a href="mailto:qgqgqhqyus@gmail.com">qgqgqhqyus@gmail.com</a>
+          <h3>Email Mustafa</h3>
+          <a href="mailto:nikedino121@gmail.com">nikedino121@gmail.com</a>
         </div>
         
         <div class="info-box">
@@ -65,7 +82,7 @@
         </div>
       </div>
 
-      <div class="contact-form animate-on-scroll animate-delay-1">
+      <div class="contact-form">
         <form action="#">
           <div class="form-group">
             <label for="name">Name</label>
@@ -79,13 +96,14 @@
             <label for="message">Message</label>
             <textarea id="message" rows="5" placeholder="How can I help you?" required></textarea>
           </div>
-          <button type="submit" class="btn-primary" style="width:100%; justify-content:center;">Send Message</button>
+          <button type="submit" class="btn-primary" style="width:100%; cursor:pointer;">Send Message</button>
         </form>
       </div>
     </div>
   </main>
 
   <footer id="site-footer" role="contentinfo"></footer>
+
   <script src="components/header.js"></script>
   <script src="components/footer.js"></script>
   <script src="js/app.js"></script>  
